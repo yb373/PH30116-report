@@ -138,9 +138,11 @@ class SimuIma:
         :return:
         """
         if raw:
-            pylab.plot(self._ima[n])
+            pylab.plot(self._ima[n], label = n)
+            pylab.legend(loc= 2, prop = {'size':15})
         else:
             pylab.plot(self._realima[n])
+            pylab.legend(loc= 2, prop = {'size':15})
 
 
     def reset(self):
